@@ -1,54 +1,61 @@
 <!DOCTYPE html>
-	<html>
+<html>
 
-		<head>
-  			<title>RUDE COOKIES.</title>
-  			<link href="css/RC_2015.css" rel="stylesheet">
-		</head>
+    <head>
+        <title>RUDE COOKIES.</title>
+        <link href="css/RC_2015.css" rel="stylesheet">
+    </head>
 
-		<body>
+    <body>
 
-  			<h1>RUDE COOKIES</h1>
-  			<center><img id="logoGif" src="media/brand/HeartGif.gif" alt="CussSymbol"
-  			align="middle"></center>
-  			
-  					
-  						<script type="text/javascript" language="JavaScript"><!--
-						function HideContent(d) {
-						document.getElementById(d).style.display = "none";
-						}
-						function ShowContent(d) {
-						document.getElementById(d).style.display = "block";
-						}
-						function ReverseDisplay(d) {
-						if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
-						else { document.getElementById(d).style.display = "none"; }
-						}
-						//--></script>
-						
-							<h2><a href="javascript:ReverseDisplay('about')">WTF?</a></h2>
+        <h1>RUDE COOKIES</h1>
 
-								<div id="about" style="display:none;">
-								<p>Est. in 2012, we are a small bakery producing a variety of rude sugar cookies in celebration for Valentines Day. Each cookie is handmade in NYC with tender love and cruelty</p>
-								</div>
+        <img id="logoGif" src="media/brand/HeartGif.gif" alt="CussSymbol">
 
-									<h3><a href="https://www.etsy.com/people/rudecookies">ORDER!</a></h3>
-									
-										<h4><a href="javascript:ReverseDisplay('madeby')">XOXO</a></h4>
-										
-											<div id="madeby" style="display:none;">
-											<ul style="list-style-type:none">
-  											<li><a href="http://jsong.me/">Jackie Song</a></li>
-  											<li><a href="http://cargocollective.com/taylorwoodsdesign">Taylor Woods</a></li>
-											</ul>
-											</div>	
-													
-												<h5>PEEP SHOW</h5>
-											
-								
-												
-<script>
-													
+        <script type="text/javascript" language="JavaScript">
+            function toggleDisplay(d) {
+                var displayState = document.getElementById(d).style.visibility;
+                if(displayState == "hidden" || displayState == "") { 
+                    document.getElementById(d).style.visibility = "visible"; 
+                    console.log("block");
+                }
+                else { 
+                    document.getElementById(d).style.visibility = "hidden"; 
+                    console.log("hidden");
+                }
+            }
+        </script>
+        
+    <div class="clearfix" id="buttonWrapper">
+        <a class="button" id="wtf" href="javascript:toggleDisplay('about')">
+            WTF?
+        </a>
 
-		</body>
+        <a class="button" id="order" target="_blank" href="https://www.etsy.com/people/rudecookies">
+            ORDER!
+        </a>
+
+        <a class="button" id="xoxo" href="javascript:toggleDisplay('madeby')">
+            XOXO
+        </a>
+    </div>
+
+    <div class="clearfix" id="infoWrapper">
+        <div id="about" class="info">
+            <p>Est. in 2013, we are a small bakery producing a variety of rude sugar cookies in celebration of Valentine's Day. Each cookie is handmade in NYC with tender love and cruelty. </p>
+        </div>
+
+        <div id="madeby" class="info">
+            <ul style="list-style-type:none">
+                <li><a href="http://jsong.me/">Jackie Song</a></li>
+                <li><a href="http://cargocollective.com/taylorwoodsdesign">Taylor Woods</a></li>
+                <li><a href="http://fontfabric.com/static-free-font/">Font Fabric</a></li>
+            </ul>
+        </div>  
+    </div>
+
+    <!--<h5>PEEP SHOW</h5>-->
+
+    </body>
+
 </html>
