@@ -1,7 +1,10 @@
+@media handheld {
 body {
     font-family: 'static_boldbold';
     color: black;
     font-size: 1.1em;
+    margin:0;
+    padding:0;
 }    
 
 a, a:visited {
@@ -16,26 +19,25 @@ a:hover {
 }
 
 h1 {
-    font-size:5.5em;
+    font-size:4em;
     text-align: center;
-    margin-bottom: 0px;
+    margin-top: .4em;
+    margin-bottom: 0;
 }
 
 #buttonWrapper {
     margin:auto;
-    width:60%;
     max-width: 750px;
 }
 
 .button {
     text-align: center;
     float:left;
-    width:33%;
     font-size: 1.5em;
+    width:33.3%;
 }
 
 #infoWrapper {
-    width: 55%;
     margin: auto;
     max-width: 700px;
 }
@@ -43,22 +45,22 @@ h1 {
 .info {
     visibility: hidden;
     margin: auto;
-    float: left;
+    text-align:center;
+}
+
+ul {
+    padding:0;
 }
 
 #about {
     width: 70%;
 }
 
-#madeby {
-    text-align: right;
-    width: 30%;
-}
 
 #logoGif {
-    width:500px;
+    width:90%;
     display:block;
-    margin:-10px auto 40px auto;
+    margin:-.5em auto 1em auto;
 }
 
 #peepShow {
@@ -104,9 +106,4 @@ h1 {
         visibility: hidden;
     }
 }
-
-@media handheld {
-    #logoGif {
-        width: 80%;
-    }
 }
